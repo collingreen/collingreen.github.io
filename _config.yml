@@ -1,0 +1,12 @@
+# Site settings
+title: collingreen.com
+email: collin@collingreen.com
+description: "Just a site about a guy."
+baseurl: ""
+url: "http://collingreen.com"
+twitter_username:
+github_username: collingreen
+
+# Build settings
+markdown: kramdown
+permalink: pretty

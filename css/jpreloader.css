@@ -1,0 +1,30 @@
+#jpreOverlay {
+	background-color: #1b1b1b;
+}
+#jpreSlide{
+	font-size:22px;
+	font-weight:bold;
+	color:#ccc;
+	text-align:center;
+	width:50%;
+	height:30%;
+}
+#jpreLoader{
+	width:100%;
+	height:2px;
+    background:#f2f2f2 ;
+}
+
+#jpreBar {
+	background:#34a1e4 ;
+
+}
+
+#jprePercentage {
+	color:#FFF;
+	font-weight:700;
+	font-family:'Oswald',sans-serif;
+	text-align:center;
+	margin-top:10px;
+	top:100%;
+}
