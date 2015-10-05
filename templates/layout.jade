@@ -1,0 +1,193 @@
+doctype html
+block vars
+  - var bodyclass = null;
+html(lang='en')
+  head
+    block head
+      meta(charset='utf-8')
+      meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      meta(name="author", content="Collin Green")
+      title
+        block title
+          = locals.name
+      link(rel='stylesheet', href='/css/bootstrap.min.css')
+      link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800')
+      link(rel='stylesheet', href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic')
+      link(rel='stylesheet', href='font-awesome/css/font-awesome.min.css')
+      link(rel='stylesheet', href='css/animate.min.css')
+      link(rel='stylesheet', href='css/creative.css')
+      | !{ livereloadScript }
+
+  body#page-top
+    nav#mainNav.navbar.navbar-default.navbar-fixed-top
+      .container-fluid
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.page-scroll(href='#page-top') #{locals.name}
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a.page-scroll(href='#stuff') Stuff
+            li
+              a.page-scroll(href='#portfolio') Portfolio
+            li
+              a.page-scroll(href='#contact') Contact
+        // /.navbar-collapse
+      // /.container-fluid
+    header
+      .header-content
+        .header-content-inner
+          h1 Collin Green
+          hr
+          p
+            | I love making software. I've built a bit of everything, ranging
+            | from timelapse tools to mobile games to a web app that matches
+            | the future doctors of the world with their perfect med schools.
+          p
+            | I believe in open source, automated testing, and the idea that you
+            | can build amazing software without trading quality for velocity.
+            | I think two heads are better than one, that the user experience
+            | is more important than anything else, and that an amazing team is
+            | a family that ends up stronger than the sum of its parts.
+          a.btn.btn-primary.btn-xl.page-scroll(href='#contact') Contact Me!
+
+    section#stuff
+      .container
+        .row
+          .col-lg-12.text-center
+            h2.section-heading Things I Like Doing
+            hr.primary
+      .container
+        .row
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-diamond.wow.bounceIn.text-primary
+              h3 Backends
+              p.text-muted
+                | My best work has been building scalable backends that drive
+                | web and mobile products, usually in python or javascript.
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-paper-plane.wow.bounceIn.text-primary(data-wow-delay='.1s')
+              h3 Client Side Web
+              p.text-muted
+                | The other half of full stack - front end code that the users
+                | interact with. Everything from jQuery to Angular and React.
+                | Currently obsessed with RiotJS.
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-newspaper-o.wow.bounceIn.text-primary(data-wow-delay='.2s')
+              h3 Hybrid Mobile
+              p.text-muted
+                | Cross platform mobile applications from games to business
+                | tools, generally built with cordova, gameclosure, or corona.
+          .col-lg-3.col-md-6.text-center
+            .service-box
+              i.fa.fa-4x.fa-heart.wow.bounceIn.text-primary(data-wow-delay='.3s')
+              h3 Dream about Product
+              p.text-muted
+                | I love to make things better and I'm always brainstorming
+                | about great new ways to solve existing pain points.
+
+    section#portfolio.no-padding
+      .container-fluid
+        .row.no-gutter
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='https://github.com/collingreen/chronolapse')
+              img.img-responsive(src='img/portfolio/clock.jpg', alt='chronolapse')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Chronolapse
+                  .project-name
+                    | Time-lapse Creation Software
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='https://paranoidpassword.com')
+              img.img-responsive(src='img/portfolio/key.jpg', alt='Paranoid Password')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Paranoid Password
+                  .project-name
+                    | A Better Password Solution
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='https://play.google.com/store/apps/details?id=com.muagames.thelist')
+              img.img-responsive(src='img/portfolio/thelist.jpg', alt='The List')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | TheList
+                  .project-name
+                    | Mobile Social Gaming at its Worst
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='https://www.applyperfectly.com')
+              img.img-responsive(src='img/portfolio/auburn.jpg', alt='Apply Perfectly')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Apply Perfectly
+                  .project-name
+                    | Help Future Doctors Find Their Med School
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='https://mfbn.io')
+              img.img-responsive(src='img/portfolio/mfbn.jpg', alt='Move Fast Break Nothing')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Move Fast; Break Nothing
+                  .project-name
+                    | High-Velocity Engineering as a Culture
+          .col-lg-4.col-sm-6
+            a.portfolio-box(href='http://djeroku.com')
+              img.img-responsive(src='img/portfolio/djeroku.jpg', alt='Djeroku')
+              .portfolio-box-caption
+                .portfolio-box-caption-content
+                  .project-category.text-faded
+                    | Djeroku
+                  .project-name
+                    | Django + Heroku
+    aside.bg-dark
+      .container.text-center
+        .call-to-action
+          h2 Check Out Some of My Work
+          a.btn.btn-default.btn-xl.wow.tada(href='https://github.com/collingreen')
+            i.fa.fa-github.fa-3x
+            p Github Profile
+    section#contact
+      .container
+        .row
+          .col-lg-8.col-lg-offset-2.text-center
+            h2.section-heading Get In Touch!
+            hr.primary
+            p
+              | Have a question, comment, or just want to chat? Email me about
+              | anything and we can probably have a cool conversation.
+          .col-lg-4.col-lg-offset-4.text-center
+            i.fa.fa-envelope-o.fa-3x.wow.bounceIn(data-wow-delay='.1s')
+            p
+              a(href='mailto:collin@collingreen.com') collin@collingreen.com
+
+    // jQuery
+    script(src='js/jquery.js')
+    // Bootstrap Core JavaScript
+    script(src='js/bootstrap.min.js')
+    // Plugin JavaScript
+    script(src='js/jquery.easing.min.js')
+    script(src='js/jquery.fittext.js')
+    script(src='js/wow.min.js')
+    // Custom Theme JavaScript
+    script(src='js/creative.js')
+    script.
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-46637308-1', 'auto');
+        ga('send', 'pageview');
