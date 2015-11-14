@@ -1,0 +1,21 @@
+# Arazu Config - check this in to source control
+
+# where the source code lives
+source-repo: 'git@github.com:collingreen/collingreen.github.io'
+source-branch: 'wintersmith'
+
+# where the deploy code lives
+deploy-repo: 'git@github.com:collingreen/collingreen.github.io'
+# if github, use master for organization sites, gh-pages for project
+deploy-branch: 'master'
+
+# build command - this gets called to make your build
+build-command: 'wintersmith build'
+
+# folder with build output - this gets commited into the deploy repo
+build-folder: 'build'
+
+commit-template: |
+  Deploy {date}
+
+  SHA: {sha}
