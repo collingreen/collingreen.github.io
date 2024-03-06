@@ -634,6 +634,7 @@ textarea.form-control {
 .site-project-single-action a .link-area {
   display: inline-block;
   overflow: hidden;
+  width: 400px;
 }
 .site-project-single-action a .link-area span {
   position: relative;
@@ -758,6 +759,9 @@ textarea.form-control {
 .site-blog-details blockquote p{
   color: #00113E;
   font-size: 18px;
+  margin-left: 40px;
+  background: #DDD;
+  padding: 12px;
 }
 .site-blog-details cite {
   margin-top: 10px;
