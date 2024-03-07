@@ -198,7 +198,7 @@ select.form-control {
   position: absolute;
   width: 16px;
   height: 10px;
-  background: url("../images/angle-down-select.svg");
+  background: url("../assets/images/angle-down-select.svg");
   background-size: contain;
   background-repeat: no-repeat;
   right: 15px;
@@ -315,8 +315,7 @@ textarea.form-control {
 .site-hero {
   position: relative;
   height: 100vh;
-  /*background-image: url("../images/backgrounds/hero-mountains.jpg");*/
-  background-image: url("../images/backgrounds/hero-green-squares.jpg");
+  background-image: url("../assets/images/backgrounds/hero-green-squares.jpg");
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -811,7 +810,7 @@ textarea.form-control {
 
 .site-cta {
   padding: 130px 0;
-  background-image: url("../images/backgrounds/cta-background.jpg");
+  background-image: url("../assets/images/backgrounds/cta-background.jpg");
   background-size: cover;
   background-position: center center;
 }
