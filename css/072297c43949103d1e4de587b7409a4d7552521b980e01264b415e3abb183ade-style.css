@@ -431,7 +431,9 @@ textarea.form-control {
 }
 .site-project-item-thumb img, .site-blog-post-thumb img {
   width: 100%;
+  min-height: 550px;
 }
+
 .site-project-item-content, .site-blog-post-content {
   position: absolute;
   background: #F7F9FF;
